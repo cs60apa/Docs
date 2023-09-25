@@ -26,7 +26,7 @@ function Header(props) {
               <p>Components</p>
             </li>
             <li className="text-[#969697] hover:text-gray-300">
-              <p>Themes</p>
+              <p>Resources</p>
             </li>
             <li className="text-[#969697] hover:text-gray-300">
               <p>Examples</p>
