@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { BsBook } from "react-icons/bs";
 import { BiCommand, BiLogoGithub, BiLogoTwitter } from "react-icons/bi";
-import { RxMoon } from "react-icons/rx";
+import { RxMoon, RxSun } from "react-icons/rx";
 import { MdOutlineCancel } from "react-icons/md";
 
 function Header(props) {
@@ -16,7 +16,7 @@ function Header(props) {
   return (
     <div className="min-h-screeen">
       <div className="border-box border-b border-gray-800 h-20 lg:px-5 pt-2 flex justify-between">
-        <div className="hidden md:flex flex-row">
+        <div className="hidden md:flex flex-row lg:space-x-4">
           <p className="text-4xl">DevCircle</p>
           <ul className="flex space-x-4 p-4 font-medium">
             <li className="text-[#969697] hover:text-gray-300">
@@ -58,7 +58,7 @@ function Header(props) {
               onClick={props.toggleDarkMode}
               className="hover:rounded-lg dark:hover:bg-[#27272A] hover:px-1"
             >
-              <RxMoon size={20} />
+              {props.darkMode ? <RxMoon size={20}/> : <RxSun size={20}/>}
             </button>
           </div>
         </div>
@@ -164,7 +164,7 @@ function Header(props) {
               onClick={props.toggleDarkMode}
               className="hover:rounded-lg dark:hover:bg-[#27272A] hover:px-1"
             >
-              <RxMoon size={20} />
+               {props.darkMode ? <RxMoon size={20}/> : <RxSun size={20}/>}
             </button>
           </div>
         </div>
