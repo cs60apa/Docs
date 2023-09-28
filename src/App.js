@@ -8,9 +8,14 @@ import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 
 function App() {
+  const [darkMode, setDarkMode] = React.useState(true);
+  function toggleDarkMode() {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+  }
   return (
-    <div>
-      <Header  />
+    <div className={`min-h-screen
+    ${darkMode ? "dark" : "light"}`}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Routes>
         <Route path="/" element={<Docs />} />
         <Route path="/developer" element={<Developer />} />
