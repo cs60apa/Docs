@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { IoIosArrowForward, IoMdCopy } from "react-icons/io";
+import { IoIosArrowForward, IoMdCopy, IoIosArrowBack } from "react-icons/io";
 import {
   SiNextdotjs,
   SiVite,
@@ -172,17 +172,103 @@ function Docs() {
             </p>
           </div>
           <div className="py-5">
-          <h1 className="font-bold">components.json</h1>
-          <div className="mt-2 p-5 rounded-lg border-none bg-[#18181A] h-auto w-full tracking-wide">
-            <p>&#123; <span className="flex justify-end"><IoMdCopy /></span></p>
-            <p className="ml-4">&quot;style&quot; : <span className="text-[#909092]">&quot;default&quot;</span>,</p>
-            <p className="ml-4">&quot;tailwind&quot; : &#123;</p>
-            <p className="ml-8">&quot;config&quot; : <span className="text-[#909092]">&quot;tailwind.config.js&quot;</span>,</p>
-            <p className="ml-8">&quot;css&quot; : <span className="text-[#909092]">&quot;src/app/globals.css&quot;</span>,</p>
-            <p className="ml-8">&quot;baseColor&quot; : <span className="text-[#909092]">&quot;zinc&quot;</span>,</p>
-            <p className="ml-8">&quot;cssVariables&quot; : <span className="text-[#909092]">&quot;true&quot;</span>,</p>
-            <p>&#125;,</p>
+            <h1 className="font-bold">components.json</h1>
+            <div className="mt-2 p-5 rounded-lg border-none bg-[#18181A] h-auto w-full tracking-wide">
+              <p>
+                &#123;{" "}
+                <span className="flex justify-end">
+                  <IoMdCopy />
+                </span>
+              </p>
+              <p className="ml-4">
+                &quot;style&quot; :{" "}
+                <span className="text-[#909092]">&quot;default&quot;</span>,
+              </p>
+              <p className="ml-4">&quot;tailwind&quot; : &#123;</p>
+              <p className="ml-8">
+                &quot;config&quot; :{" "}
+                <span className="text-[#909092]">
+                  &quot;tailwind.config.js&quot;
+                </span>
+                ,
+              </p>
+              <p className="ml-8">
+                &quot;css&quot; :{" "}
+                <span className="text-[#909092]">
+                  &quot;src/app/globals.css&quot;
+                </span>
+                ,
+              </p>
+              <p className="ml-8">
+                &quot;baseColor&quot; :{" "}
+                <span className="text-[#909092]">&quot;zinc&quot;</span>,
+              </p>
+              <p className="ml-8">
+                &quot;cssVariables&quot; :{" "}
+                <span className="text-[#909092]">&quot;true&quot;</span>,
+              </p>
+              <p className="ml-4">&#125;,</p>
+              <p className="ml-8">
+                &quot;rsc&quot; :{" "}
+                <span className="text-[#909092]">&quot;false&quot;</span>,
+              </p>
+              <p className="ml-8">
+                &quot;tsx&quot; :{" "}
+                <span className="text-[#909092]">&quot;false&quot;</span>,
+              </p>
+              <p className="ml-8">&quot;aliases&quot; : &#123;</p>
+              <p className="ml-16">
+                &quot;utils&quot; :{" "}
+                <span className="text-[#909092]">&quot;~/lib/utils&quot;</span>,
+              </p>
+              <p className="ml-16">
+                &quot;components&quot; :{" "}
+                <span className="text-[#909092]">&quot;~/components&quot;</span>
+                ,
+              </p>
+              <p className="ml-4">&#125;</p> <p>&#125;</p>
+            </div>
           </div>
+          <div>
+            <p>
+              To configure import aliases, you can use the following{" "}
+              <span className="rounded-lg p-1 border-none bg-[#18181A]">
+                jsconfig.json:
+              </span>
+            </p>
+          </div>
+          <div className="py-5">
+            <h1 className="font-bold">jsconfig.json</h1>
+            <div className="mt-2 p-5 rounded-lg border-none bg-[#18181A] h-auto w-full tracking-wide">
+              <p>
+                &#123;{" "}
+                <span className="flex justify-end">
+                  <IoMdCopy />
+                </span>
+              </p>
+              <p className="ml-4">&quot;compilerOptions&quot; : &#123;</p>
+              <p className="ml-8">&quot;paths&quot; : &#123;</p>
+              <p className="ml-16">
+                &quot;@/*&quot; :{" "}
+                <span className="text-[#909092]">[&quot;./*&quot;]</span>,
+              </p>
+              <p className="ml-8">&#125;</p>
+              <p className="ml-4">&#125;</p>
+              <p>&#125;</p>
+            </div>
+          </div>
+          <div className="flex justify-between py-10">
+            <button className="border rounded-lg dark:border-[#27272A] h-10 hover:bg-[#18181A]">
+              <p className="flex py-1.5 md:mx-5 mx-1">
+                <IoIosArrowBack className="m-1 md:m-1.5 text-[#969697]" /> Introduction{" "}
+              </p>
+            </button>
+            <button className="border rounded-lg dark:border-[#27272A] hover:bg-[#18181A] h-10">
+              <p className="flex py-1.5 md:mx-5 mx-1">
+                components.json{" "}
+                <IoIosArrowForward className="m-1 md:m-1.5 text-[#969697]" />
+              </p>
+            </button>
           </div>
         </div>
         {/* right sidebar content */}
