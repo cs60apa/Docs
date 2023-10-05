@@ -20,19 +20,19 @@ function Header(props) {
           <p className="text-4xl">DevCircle</p>
           <ul className="flex space-x-4 p-4 font-medium">
             <li className="text-[#969697] hover:text-gray-300">
-              <p>Documentation</p>
+              <p>Docs</p>
             </li>
             <li className="text-[#969697] hover:text-gray-300">
-              <p>Components</p>
+              <p>Developers</p>
             </li>
             <li className="text-[#969697] hover:text-gray-300">
-              <p>Themes</p>
+              <p>About Us</p>
             </li>
             <li className="text-[#969697] hover:text-gray-300">
-              <p>Examples</p>
+              <p>Resources</p>
             </li>
             <li className="text-[#969697] hover:text-gray-300">
-              <p>Github</p>
+              <p>Privacy Policy</p>
             </li>
           </ul>
         </div>
@@ -84,27 +84,27 @@ function Header(props) {
                 </div>
                 <Link to="#" className="block ml-2">
                   <div className="flex justify-between m-3 ">
-                    <h1 className="text-base">Documentation</h1>
+                    <h1 className="text-base">Docs</h1>
                   </div>
                 </Link>
                 <Link to="#" className="block ml-2">
                   <div className="flex justify-between m-3 ">
-                    <h1 className="text-base">Components</h1>
+                    <h1 className="text-base">Resources</h1>
                   </div>
                 </Link>
                 <Link to="#" className="block pl-2">
                   <div className="flex justify-between m-3 ">
-                    <h1 className="text-base">Themes</h1>
+                    <h1 className="text-base">Developers</h1>
                   </div>
                 </Link>
                 <Link to="#" className="block pl-2">
                   <div className="flex justify-between m-3 ">
-                    <h1 className="text-base">Examples</h1>
+                    <h1 className="text-base">Privacy Policy</h1>
                   </div>
                 </Link>
                 <Link to="#" className="block pl-2">
                   <div className="flex justify-between m-3 ">
-                    <h1 className="text-base">Github</h1>
+                    <h1 className="text-base">Contact</h1>
                   </div>
                 </Link>
                 <Link to="#" className="block pl-2">
